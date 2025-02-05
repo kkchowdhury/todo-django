@@ -1,7 +1,7 @@
 FROM python:3
 
-# Install python3-distutils
-RUN apt-get update && apt-get install -y python3-distutils
+# Install system dependencies, including distutils and other build dependencies
+RUN apt-get update && apt-get install -y python3-distutils python3-dev
 
 WORKDIR /data
 
